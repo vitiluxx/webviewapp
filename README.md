@@ -16,7 +16,7 @@ CONFIGURATION :
 - Plateformes : Android + iOS (Être prête à être publiée sur le Play Store et l’App Store)
 
 Fonctionnalités :
--Accès à la caméra/galerie photo
+-Accès à la caméra/galerie photo/fichiers
 -Gérer le splash screen au démarrage
 -Gérer la navigation (retour, rafraîchissement, etc.)
 
