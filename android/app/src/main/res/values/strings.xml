@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">ADHET</string>
-    <string name="title_activity_main">ADHET</string>
-    <string name="package_name">td.adhet.app</string>
-    <string name="custom_url_scheme">td.adhet.app</string>
+    <string name="app_name">ADMIN FIDETECHL</string>
+    <string name="title_activity_main">ADMIN FIDETECHL</string>
+    <string name="package_name">td.cifi_tech.app</string>
+    <string name="custom_url_scheme">td.cifi_tech.app</string>
 </resources>

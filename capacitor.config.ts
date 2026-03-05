@@ -1,13 +1,13 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'td.adhet.app',
-  appName: 'ADHET',
+  appId: 'td.cifi_tech.app',
+  appName: 'ADMIN FIDETECHL',
   webDir: 'web',
   server: {
-    url: 'https://www.adhet-tchad.org/wp-admin',
+    url: 'https://www.fidetechlformation.com/login',
     cleartext: false,
-    allowNavigation: ['www.adhet-tchad.org', 'adhet-tchad.org']
+    allowNavigation: ['www.fidetechlformation.com/login', 'fidetechlformation.com/login']
   },
   ios: {
     contentInset: 'always',

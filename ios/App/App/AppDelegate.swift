@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WKNavigationDelegate {
     var window: UIWindow?
 
     // Domaine interne autorisé à rester dans la WebView
-    private let INTERNAL_DOMAIN = "adhet-tchad.org"
+    private let INTERNAL_DOMAIN = "cifi_tech-tchad.org"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Configuration du delegate de navigation pour:

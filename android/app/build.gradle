@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "td.adhet.app"
+    namespace "td.cifi_tech.app"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "td.adhet.app"
+        applicationId "td.cifi_tech.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

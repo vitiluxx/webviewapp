@@ -1,16 +1,16 @@
-# ADHET (Ionic React + Capacitor)
+# CIFI_TECH (Ionic React + Capacitor)
 
 Application mobile (Android + iOS) qui charge le site distant dans une WebView Capacitor.
 
-- URL distante: `https://www.adhet-tchad.org/wp-admin`
-- Nom de l’app: `ADHET`
-- Package ID: `td.adhet.app`
+- URL distante: `https://www.cifi_tech-tchad.org/wp-admin`
+- Nom de l’app: `CIFI_TECH`
+- Package ID: `td.cifi_tech.app`
 - Plateformes: Android + iOS
 - Push: non (désactivé)
 
 ## Fonctionnalités
 
-- Navigation interne conservée (domaine `adhet-tchad.org`).
+- Navigation interne conservée (domaine `cifi_tech-tchad.org`).
 - Liens externes ouverts dans le navigateur système.
 - Splash (par défaut). Icônes/splash personnalisables plus tard.
 - Bouton retour Android: retour dans l’historique WebView; si pas d’historique, quitte l’app.
@@ -23,7 +23,7 @@ Application mobile (Android + iOS) qui charge le site distant dans une WebView C
 - `capacitor.config.ts`: configuration Capacitor (URL distante, domaines autorisés, webDir).
 - `web/`: assets statiques. La WebView charge l’URL distante, ces fichiers servent principalement pour le fallback offline.
 - `android/` et `ios/`: projets natifs générés.
-- `android/app/src/main/java/td/adhet/app/MainActivity.java`: interception liens externes + fallback offline + back Android (commenté en FR).
+- `android/app/src/main/java/td/cifi_tech/app/MainActivity.java`: interception liens externes + fallback offline + back Android (commenté en FR).
 - `android/app/src/main/AndroidManifest.xml`: permissions INTERNET, CAMERA, READ_MEDIA_IMAGES, LOCATION.
 - `ios/App/App/AppDelegate.swift`: interception liens externes + fallback offline (commenté en FR).
 - `ios/App/App/Info.plist`: descriptions d’usage (caméra, photothèque, localisation).
@@ -60,9 +60,9 @@ Compilation/running se fait depuis Android Studio/Xcode.
 - Éditez `capacitor.config.ts`:
 ```ts
 server: {
-  url: 'https://www.adhet-tchad.org/wp-admin',
+  url: 'https://www.cifi_tech-tchad.org/wp-admin',
   cleartext: false,
-  allowNavigation: ['www.adhet-tchad.org', 'adhet-tchad.org']
+  allowNavigation: ['www.cifi_tech-tchad.org', 'cifi_tech-tchad.org']
 }
 ```
 - Puis:
@@ -72,7 +72,7 @@ npx cap sync
 
 ## Gestion des liens externes
 
-- Les liens dont le domaine ne se termine pas par `adhet-tchad.org` s’ouvrent dans le navigateur système (Android: `Intent.ACTION_VIEW`, iOS: `UIApplication.shared.open`).
+- Les liens dont le domaine ne se termine pas par `cifi_tech-tchad.org` s’ouvrent dans le navigateur système (Android: `Intent.ACTION_VIEW`, iOS: `UIApplication.shared.open`).
 - Pour ajouter d’autres domaines internes, ajustez la constante `INTERNAL_DOMAIN`:
   - Android: `MainActivity.java`
   - iOS: `AppDelegate.swift`
